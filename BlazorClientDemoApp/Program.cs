@@ -19,7 +19,7 @@ namespace BlazorClientDemoApp
 
             builder.Services.AddTransient(sp => new HttpClient
             { 
-                BaseAddress = new Uri("https://localhost:44307")//builder.HostEnvironment.BaseAddress)
+                BaseAddress = new Uri("https://localhost:44307/")//builder.HostEnvironment.BaseAddress)
             });
 
             await builder.Build().RunAsync();
